@@ -1,4 +1,5 @@
 import Logo from './Odin-Face.jpg';
+import './style.css';
 
 function displayHome (){
     const contentDiv = document.querySelector('.content');
