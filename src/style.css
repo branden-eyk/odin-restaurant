@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@600&display=swap');
+
 body {
     background-color: #afb683;
 }
 
 .corner-img {
-    position: absolute;
+    position: fixed;
     height: 20%;
     width: auto;
 }
@@ -35,4 +37,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.content__div {
+    background-color: #858a61;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 5px double black;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header__logo {
+    border-radius: 200px;
+    border: 5px double black;
+    height: 100px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.header__title {
+    font-family: 'Cinzel', serif;
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.pageContent__subsection {
+    width: 30%;
 }
