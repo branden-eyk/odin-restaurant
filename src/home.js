@@ -29,12 +29,15 @@ function createContent(){
 
     const aboutUs = document.createElement('div');
     aboutUs.classList.add('content__div', 'pageContent__subsection');
+    const aboutUsSubtitle = document.createElement('h2');
+    aboutUsSubtitle.classList.add('pageContent__subtitle');
+    aboutUsSubtitle.innerText = 'About Us';
     const blurb = document.createElement('p');
     blurb.innerText = "Dare you, mortal, eat of the nectar of the gods? Dost thou possess the hubris that thou thinkest thee worthy to eat of the food that sustaineth thy masters? Then tarry not and cometh thee to Odin's Eatery of The Gods. Where the game ceases never to be fresh, and the mead dost eternally overfloweth.";
-    aboutUs.appendChild(blurb); 
+    aboutUs.append(aboutUsSubtitle, blurb); 
 
     const hours = document.createElement('div');
-    hours.classList.add('pageContent__subsection', 'content__div');
+    hours.classList.add('pageContent__subsection', 'pageContent__subsection--centered', 'content__div');
     const hoursSubtitle = document.createElement('h2');
     hoursSubtitle.classList.add('pageContent__subtitle');
     hoursSubtitle.innerText = 'Hours';
@@ -49,7 +52,7 @@ function createContent(){
     hours.append(hoursSubtitle, hoursList);
 
     const location = document.createElement('div');
-    location.classList.add('pageContent__subsection', 'content__div');
+    location.classList.add('pageContent__subsection', 'pageContent__subsection--centered', 'content__div');
     const locationSubtitle = document.createElement('h2');
     locationSubtitle.classList.add('pageContent__subtitle');
     locationSubtitle.innerText = 'Location';

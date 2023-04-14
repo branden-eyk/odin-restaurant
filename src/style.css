@@ -2,12 +2,14 @@
 
 body {
     background-color: #afb683;
+    padding-top: 50px;
+    font-family: 'Acme', sans-serif;
 }
 
 .corner-img {
     position: fixed;
-    height: 20%;
-    width: auto;
+    width: 10%;
+    height: auto;
 }
 
 .corner-img--topLeft {
@@ -33,11 +35,39 @@ body {
     transform: rotate(180deg);
 }
 
+.nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav__item {
+    padding: 0px 30px 10px 30px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    opacity: 0.4;
+    background-color: #858a61;
+    border-radius: 3px;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+}
+
+.nav__item--active {
+    border-bottom: none;
+    border-radius: 3px 3px 0px 0px;
+    border-top: 1px solid black;
+    opacity: 1;
+    background-color: #afb683;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Acme', sans-serif;
 }
 
 .content__div {
@@ -74,5 +104,16 @@ body {
 }
 
 .pageContent__subsection {
-    width: 30%;
+    width: 50%;
+}
+
+.pageContent__subsection--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageContent__subtitle {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
 }
