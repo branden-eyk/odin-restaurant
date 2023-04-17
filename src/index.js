@@ -1,3 +1,4 @@
-import displayHome from "./home";
+import './style.css';
+import loadPage from "./pageLoader";
 
-displayHome();
+loadPage();
