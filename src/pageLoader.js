@@ -1,4 +1,5 @@
 import displayHome from "./home";
+import displayMenu from "./menu";
 
 function loadPage(){
     displayHome();
@@ -19,6 +20,7 @@ function setPage(e) {
             displayHome();
             break;
         case 'menu':
+            displayMenu();
             break;
         case 'contact':
             break;
